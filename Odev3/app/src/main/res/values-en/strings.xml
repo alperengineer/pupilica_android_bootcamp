@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Odev3</string>
+    <string name="kargo_takip">Cargo Tracking</string>
+    <string name="takip_numarasi">Enter Tracking Number</string>
+    <string name="sorgula">Track</string>
+    <string name="kargo_durumu">Cargo Status</string>
+    <string name="teslim_tarihi">Estimated Delivery: 03.05.2025</string>
+    <string name="kargo_firmasi">Cargo Company: PTT Cargo</string>
+</resources>

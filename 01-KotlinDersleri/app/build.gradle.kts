@@ -6,6 +6,7 @@ plugins {
 android {
     namespace = "com.example.a01_kotlindersleri"
     compileSdk = 35
+    compileOptions.encoding = "ISO-8859-1"
 
     defaultConfig {
         applicationId = "com.example.a01_kotlindersleri"
