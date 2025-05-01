@@ -4,12 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.a01_kotlindersleri"
+    namespace = "com.aok.odev3"
     compileSdk = 35
-    compileOptions.encoding = "ISO-8859-1"
 
     defaultConfig {
-        applicationId = "com.example.a01_kotlindersleri"
+        applicationId = "com.aok.odev3"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

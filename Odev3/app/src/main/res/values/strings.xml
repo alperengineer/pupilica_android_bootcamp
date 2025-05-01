@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Odev3</string>
+    <string name="kargo_takip">Kargo Takip</string>
+    <string name="takip_numarasi">Takip Numarası Giriniz</string>
+    <string name="sorgula">Sorgula</string>
+    <string name="kargo_durumu">Kargo Durumu</string>
+    <string name="teslim_tarihi">Tahmini Teslim: 03.05.2025</string>
+    <string name="kargo_firmasi">Kargo Firması: PTT Kargo</string>
+</resources>

@@ -4,12 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.a01_kotlindersleri"
+    namespace = "com.example.a02_tasarimcalismasi"
     compileSdk = 35
-    compileOptions.encoding = "ISO-8859-1"
 
     defaultConfig {
-        applicationId = "com.example.a01_kotlindersleri"
+        applicationId = "com.example.a02_tasarimcalismasi"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

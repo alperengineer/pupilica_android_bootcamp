@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/main_color"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amaranth"
+            android:text="@string/kargo_takip"
+            android:layout_gravity="center"
+            android:textColor="@color/text_color"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/kargo"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+
+    <EditText
+        android:id="@+id/editTextTrackingNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/takip_numarasi"
+        android:inputType="text"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:padding="12sp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/imageLogo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="24dp" />
+
+
+    <Button
+        android:id="@+id/buttonTrack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/main_color"
+        android:fontFamily="@font/amaranth"
+        android:textSize="18sp"
+        android:text="@string/sorgula"
+        app:layout_constraintTop_toBottomOf="@id/editTextTrackingNumber"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp" />
+
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/kargo_durumu"
+        android:fontFamily="@font/amaranth"
+        android:textColor="@color/main_color"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/buttonTrack"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/textViewDeliveryDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/teslim_tarihi"
+        android:fontFamily="@font/amaranth"
+        android:textColor="@color/main_color"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/textViewResult"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp" />
+
+
+
+    <TextView
+        android:id="@+id/textViewCompany"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/kargo_firmasi"
+        android:fontFamily="@font/amaranth"
+        android:textColor="@color/main_color"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/textViewDeliveryDate"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
