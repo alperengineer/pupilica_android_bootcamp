@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.fragment.DetayFragment">
+
+
+    <ImageView
+        android:id="@+id/iv_detay_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_detay_food_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textColor="@color/black3"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_detay_img" />
+
+    <TextView
+        android:id="@+id/tv_detay_food_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detay_food_name" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_decrease"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/blue"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:padding="0dp"
+        android:text="-"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:cornerRadius="12dp"
+        app:iconPadding="0dp"
+        app:iconSize="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_add_to_cart"
+        app:layout_constraintEnd_toStartOf="@+id/tv_quantity"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detay_food_price" />
+
+    <TextView
+        android:id="@+id/tv_quantity"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="4dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_tv_cart"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_add_to_cart"
+        app:layout_constraintEnd_toStartOf="@+id/btn_increase"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_decrease"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detay_food_price" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_increase"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/blue"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:padding="0dp"
+        android:text="+"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:cornerRadius="12dp"
+        app:iconPadding="0dp"
+        app:iconSize="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_add_to_cart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_quantity"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detay_food_price" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_add_to_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="196dp"
+        android:text="Sepete Ekle"
+        android:textSize="18sp"
+        app:icon="@drawable/ic_add_cart"
+        app:iconGravity="textEnd"
+        app:iconPadding="8dp"
+        app:iconTint="@android:color/white"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
